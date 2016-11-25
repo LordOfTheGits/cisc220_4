@@ -12,11 +12,11 @@ int main( int argc, char *argv[]) {
 
     pome = fopen(argv[1], "r+");
 
-    char string[500];
+    char string[255];
 
     long pos = ftell(pome); 
 	
-    while(fgets(string, 500, pome) != Null) {
+    while(fgets(string, 255, pome) != NULL) {
 
     	int j;
         
