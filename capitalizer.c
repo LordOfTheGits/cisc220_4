@@ -28,7 +28,7 @@ int main( int argc, char *argv[]) {
 
     	for (j=1 ; j<size ; j++) {
 
-    		if (isalpha(string[j]) && string[j-1] == " ") {
+    		if (isalpha(string[j]) && string[j-1] == ' ') {
 
     			if ((wordNumber % 2) == 0) {
 
