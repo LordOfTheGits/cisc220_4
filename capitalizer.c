@@ -8,15 +8,15 @@
 
 int main(int argc, char *argv[]) {
     
-    FILE *pome;
+    FILE *poem;
 
-    pome = fopen(argv[1], "r+");
+    poem = fopen(argv[1], "r+");
 
     char string[255];
 
-    long pos = ftell(pome); 
+    long pos = ftell(poem); 
 	
-    while(fgets(string, 255, pome) != NULL) {
+    while(fgets(string, 255, poem) != NULL) {
 
     	int j;
         
@@ -42,17 +42,17 @@ int main(int argc, char *argv[]) {
 
     	}
 
-    	fseek(pome, pos, SEEK_SET);
+    	fseek(poem, pos, SEEK_SET);
 
-    	fprintf(pome, "%s", string);
+    	fprintf(poem, "%s", string);
 
-    	fflush(pome);
+    	fflush(poem);
 
-    	pos = ftell(pome);
+    	pos = ftell(poem);
 
     }
 
-    fclose(pome);
+    fclose(poem);
 
     return 0;
 }
