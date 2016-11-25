@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     
     FILE *poem;
 
-    poem = fopen(argv[1], "r+");
+    poem = fopen("poem.txt", "r+");
 
     char string[255];
 
