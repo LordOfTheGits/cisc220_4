@@ -17,7 +17,7 @@ int multMatrix(){
 		scanf("%d %d", &matrix2Rows, &matrix2Cols);
 
 		if(matrix1Cols != matrix2Rows) {
-			printf("\nThe row number of the second array does not match the column number in array 1");
+			printf("Error: Number of rows must be the same as the number of columns in the first matrix\n");
 		}
 		else if (matrix1Rows < 1 || matrix1Cols < 1) {
 			printf("Error: Dimensions must be greater than 0\n");		
